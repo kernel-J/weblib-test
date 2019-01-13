@@ -1,0 +1,28 @@
+{
+  "name": "pend",
+  "version": "0.0.2",
+  "description": "pend is Postgres Express Node Docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L index.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "postgress",
+    "express",
+    "node",
+    "docker",
+    "docker-compose"
+  ],
+  "author": "Jennifer de Beauchene",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.14.0",
+    "pg-promise": "^5.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
