@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "6b00d70a-4427-486f-aa76-865bd0de4c84",
+		"name": "weblib-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "192.168.99.100:3000/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstname\": \"toto\",\n\t\"lastname\": \"toto\",\n\t\"player_number\": 2\n}"
+				},
+				"url": {
+					"raw": "192.168.99.100:3000/all",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "3000",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.99.100:3000/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstname\": \"Bob\",\n\t\"lastname\": \"Johnson\",\n\t\"player_number\": 22\n}"
+				},
+				"url": {
+					"raw": "192.168.99.100:3000/create",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "3000",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.99.100:3000/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 2,\n\t\"newData\": {\n\t\t\"firstname\": \"Blabber\",\n\t\t\"lastname\": \"Bunz\",\n\t\t\"player_number\": 22\n\t}\n}"
+				},
+				"url": {
+					"raw": "192.168.99.100:3000/update",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "3000",
+					"path": [
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.99.100:3000/delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 2\n}"
+				},
+				"url": {
+					"raw": "192.168.99.100:3000/delete",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "3000",
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "192.168.99.100:3000/player",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1\n}"
+				},
+				"url": {
+					"raw": "192.168.99.100:3000/player",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "3000",
+					"path": [
+						"player"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
